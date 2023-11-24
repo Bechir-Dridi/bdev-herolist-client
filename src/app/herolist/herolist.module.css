@@ -1,0 +1,24 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.title {
+  color: whitesmoke;
+}
+
+.hero {
+  margin: 10px 10px;
+  padding: 2px 16px;
+  background-color: #f9f8f8;
+  border-left: 10px solid #f9f8f8;
+  color: black;
+}
+
+.hero:hover {
+  border-left: 10px solid gold;
+}

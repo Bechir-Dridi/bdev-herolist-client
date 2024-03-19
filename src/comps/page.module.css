@@ -1,0 +1,28 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: whitesmoke;
+}
+
+.text {
+  color: white;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+  padding: 8px 0;
+  margin: 20px auto;
+  background-color: #4979ff;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}

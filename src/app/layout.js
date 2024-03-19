@@ -1,6 +1,7 @@
 import './globals.css'
 import Navbar from '@/comps/navbar'
 import Footer from '@/comps/footer'
+import { Toaster, toast } from 'sonner'
 
 export const metadata = {
   title: 'Hero List',
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="content">
         <Navbar />
+
         {children}
+        <Toaster expand={false} richColors position="top-center" />
+
         <Footer />
       </body>
     </html>

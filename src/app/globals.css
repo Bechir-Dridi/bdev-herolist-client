@@ -21,8 +21,33 @@
   /* ----------- layout.js ------------end */
 
   /* ----------- navbar.js ------------begin */
-  nav {
-    margin: 10px auto 80px;
+  nav .sign {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  nav .sign a {
+    margin: 5px 0 0 5px;
+    padding: 2px 8px;
+    background-color: white;
+    border: 1px solid #4979ff;
+    border-radius: 4px;
+    color: #4979ff;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  nav .sign a:nth-child(2) {
+    background-color: #4979ff;
+    color: white;
+
+  }
+
+
+  nav .navbar {
+    margin: 10px auto 14px;
     padding: 10px 0;
     display: flex;
     justify-content: flex-end;
@@ -55,13 +80,27 @@
 
   /* ----------- footer.js ------------begin */
   footer {
-    display: block;
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: #c2c0c0;
     border-top: 1px solid #eaeaea;
+    gap: 28px;
   }
+
+  footer .links-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+
+  footer .links-container p a:hover,
+  footer .links-container .icon :hover {
+    color: gold;
+  }
+
+
 
   /* ----------- footer.js ------------end */
 
@@ -76,3 +115,242 @@
   }
 
   /* ----------- not-found.js ------------end */
+
+  /* ----------- addHero.js ------------begin */
+  .add-container {
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid silver;
+  }
+
+  .add-container .add {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .add-container .inputs {
+    width: 70%;
+  }
+
+  .add-container .inputs label {
+    font-size: large;
+  }
+
+  .add-container .inputs input {
+    border: none;
+    outline: none;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .add-hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 8px 0px;
+    margin: 20px auto;
+    background-color: #4979ff;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* ----------- addHero.js ------------end */
+
+  /* ----------- updateHero.js ------------begin */
+  .update-hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    padding: 8px 0px;
+    margin: 20px auto;
+    background-color: #4979ff;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+  }
+
+  /* ----------- updateHero.js ------------end */
+
+
+  /* ----------- heroDetails.js ------------begin */
+
+  .heroName,
+  .heroFrom {
+    color: whitesmoke;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-radius: 8px;
+  }
+
+  .cardTitleForHero {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, #4979ff 30%);
+  }
+
+  .cardTitleForVillain {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(11, 1, 1, 1) 100%);
+
+  }
+
+  .heroName {
+    text-align: end;
+
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow text */
+    text-overflow: ellipsis;
+    /* Display an ellipsis (...) to indicate text overflow */
+  }
+
+  .heroFrom {
+    font-style: italic;
+    color: black;
+    margin-bottom: 4px;
+
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide overflow text */
+    text-overflow: ellipsis;
+    /* Display an ellipsis (...) to indicate text overflow */
+  }
+
+  .imgContainer {
+    margin: 2px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgContainer img {
+    object-fit: cover;
+  }
+
+  .evalContainer {
+    margin-top: auto;
+    margin-bottom: 2.5px;
+  }
+
+  .btnContainer {
+    margin: 2.5px 6px 0 6px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .btn-eval {
+    width: 100%;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .btnContainer button {
+    width: 100%;
+    bottom: 10px;
+    padding: 0px;
+    border: 1px solid black;
+    background-color: #f9f8f8;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color border 0.3s ease;
+  }
+
+  .btnContainer button img {
+    margin-right: 3px;
+  }
+
+  .btnContainer button:hover {
+    border: 1px solid goldenrod;
+    background-color: gold;
+  }
+
+
+  /* ----------- heroDetails.js ------------end */
+
+  /* ----------- card.js ------------begin */
+  .card {
+    display: flex;
+    margin-top: 14px;
+    background-color: #f9f8f8;
+    width: 180px;
+    min-height: 280px;
+    border-radius: 4px;
+    border: 5px solid #f9f8f8;
+    transition: border 0.3s ease;
+  }
+
+  .card:hover {
+    border: 5px solid gold;
+  }
+
+  .cardContent {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ----------- card.js ------------end */
+
+  /* ----------- loading.js ------------begin */
+  .loading {
+    animation: myRotate linear 1.5s infinite;
+  }
+
+  @keyframes myRotate {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .loading-on-screen-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, .2);
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .loading-on-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+  }
+
+
+
+  /* ----------- loading.js ------------end */

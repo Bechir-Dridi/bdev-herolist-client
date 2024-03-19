@@ -3,22 +3,43 @@
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
 }
 
-.title {
-  color: whitesmoke;
+.titleFilterContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.hero {
-  margin: 10px 10px;
-  padding: 2px 16px;
-  background-color: #f9f8f8;
-  border-left: 10px solid #f9f8f8;
-  color: black;
+#heroesFilter {
+  height: 40px;
+  outline: none;
+  font-size: 18px;
+  border-radius: 5px;
+
+  /*--- remove dropdown arrow: ---*/
+  -webkit-appearance: none;
+  /* Safari and Chrome */
+  -moz-appearance: none;
+  /* Firefox */
+  appearance: none;
+  /* Standard syntax */
 }
 
-.hero:hover {
-  border-left: 10px solid gold;
+#heroesFilter:hover {
+  border: #4979ff 2px solid;
+  cursor: pointer;
+}
+
+
+.cardContainer {
+  /* max-width: 1200px;
+  width: 100%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* auto-fit: the content will stretch to fill the entire row width.*/
+  /* minmax(200px, 1fr): sets a column width that can vary between
+      200px and the max available space */
+  gap: 2rem;
+  margin-bottom: 18px;
 }

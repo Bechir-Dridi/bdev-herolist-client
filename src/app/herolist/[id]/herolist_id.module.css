@@ -1,0 +1,73 @@
+.backBtnContainer {
+  display: flex;
+}
+
+.backBtnContainer {
+  padding: 0px;
+  margin: 0 0 10px 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  /* background-color: white; */
+}
+
+.backBtn {
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  cursor: pointer;
+  color: #4979ff
+}
+
+.hero {
+  display: flex;
+  justify-content: start;
+}
+
+.hero .heroDetailsContainer {
+  width: 90%;
+  margin: 0 24px;
+}
+
+.hero .heroDetailsContainer .nameContainer {
+  margin-bottom: 20px;
+  max-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hero .heroDetailsContainer .nameContainer .fromContainer {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+}
+
+.hero .heroDetailsContainer .descriptionContainer {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 12px;
+  align-items: center;
+}
+
+.hero .heroDetailsContainer .descriptionContainer .txtContainer {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+}
+
+.hero .heroDetailsContainer .descriptionContainer img {
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.hero .updateBtn {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.updateBtn:hover {
+  color: #4979ff
+}

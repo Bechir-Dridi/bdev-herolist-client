@@ -166,6 +166,24 @@
 
   /* ----------- addHero.js ------------end */
 
+  /* ----------- login/page.js ------------begin */
+  .password-field {
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: end;
+
+  }
+
+  .passwordEye {
+    position: absolute;
+    margin: 0 2px;
+    color: rgb(143, 146, 143);
+    cursor: pointer
+  }
+
+  /* ----------- login/page.js ------------end */
+
   /* ----------- updateHero.js ------------begin */
   .update-hero-btn {
     display: flex;
